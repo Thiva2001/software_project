@@ -16,11 +16,11 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 //Routes
-app.get('',(req,res => {
+app.get('',(req,res) => {
     res.statusCode(200).json({
         success:"Welcome to UniTunes app",
     });
-}));
+});
 
 //Port
 const PORT = process.env.PORT || 8080;
